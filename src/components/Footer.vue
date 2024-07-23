@@ -1,22 +1,5 @@
 <template>
-  <footer>
-    <div class="copyright">
-      <n-text class="description" v-html="packageJson.description" />
-      <n-text
-        class="author"
-        :depth="3"
-        v-html="packageJson.author"
-        @click="jumpLink(packageJson.github)"
-      />
-    </div>
-    <n-text
-      v-if="icp"
-      :depth="3"
-      class="icp"
-      v-html="icp"
-      @click="jumpLink('https://beian.miit.gov.cn/')"
-    />
-  </footer>
+  <footer>Powered by xiaoqy (白小七羽)</footer>
 </template>
 
 <script setup>
@@ -47,21 +30,6 @@ footer {
         content: "@ Copyright By";
         margin: 0 6px;
       }
-    }
-  }
-  .author {
-    cursor: pointer;
-    transition: all 0.3s;
-    &:hover {
-      color: var(--n-code-text-color);
-    }
-  }
-  .icp {
-    font-size: 13px;
-    cursor: pointer;
-    transition: all 0.3s;
-    &:hover {
-      color: var(--n-code-text-color);
     }
   }
 }
