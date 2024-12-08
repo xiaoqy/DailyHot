@@ -1,5 +1,5 @@
 <template>
-  <footer>Powered by xiaoqy (白小七羽)</footer>
+  <footer>© 2024 Allen Shaw. All Rights Reserved.</footer>
 </template>
 
 <script setup>
